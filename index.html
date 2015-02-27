@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>..::Login and Registration forms in Bootstrap Modal ::..</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in and Registrations forms in bootstrap modal">
+  <meta name="keywords" content="login form, responsive form, registration in modal , bootstrap modal login">
+  <meta name="author" content="Srihari Balgam">
+	
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons --> 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="clearfix"></div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<!-- Button trigger modal -->
+				<nav class="navbar navbar-default header">
+				<div class="container-fluid">
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>            
+				  </div>
+				  <div id="navbar" class="navbar-collapse collapse">            
+					<ul class="nav navbar-nav navbar-right">              				
+					  <li><button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">
+						  Sign In
+						</button></li>
+					</ul>
+				  </div><!--/.nav-collapse -->
+				</div><!--/.container-fluid -->
+			  </nav>
+
+				<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+					  <div class="modal-header btn-success" style="border-top-left-radius:5px;border-top-right-radius:5px;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Login to Your Company Name</h4>
+					  </div>
+							<div class="modal-body" id="login">
+								<div class="col-md-6">
+								    <div class="row">													
+										<div class="well" id="log_form">
+										    <form id="loginForm" method="POST" action="#">
+												<div class="form-group has-feedback has-feedback-left">
+													<label class="control-label">Username</label>
+													<input type="text" class="form-control" placeholder="Username" />
+													<i class="glyphicon glyphicon-user form-control-feedback"></i>
+													<span class="help-block"></span>
+												</div>
+
+											    <div class="form-group  has-feedback has-feedback-left ">
+												  <label for="password" class="control-label">Password</label>
+												  <input type="password" class="form-control" placeholder="Password" id="password" name="password" value="" required="" title="Please enter your password">
+												  <i class="form-control-feedback glyphicon glyphicon-lock"></i>
+												  <span class="help-block"></span>
+											    </div>
+
+											   <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+											    <div class="checkbox">
+												  <label>
+													  <input type="checkbox" name="remember" id="remember"> Remember login
+												  </label>														 
+											    </div>
+											   <button type="submit" class="btn btn-success btn-block">Login</button>
+											   <p> 
+													<a class="pull-left" data-toggle="collapse" href="" aria-expanded="false" aria-controls="" id="getUname">Forgot Username</a>													
+													<a class="pull-right" data-toggle="collapse" href="" aria-expanded="false" aria-controls="" id="getPwd">
+														Forgot Password		
+													</a>
+												</p>																									
+											</form>
+										</div><!--well-->
+										<div class="collapse" id="forgot_uname">
+											<div class="form-group has-feedback has-feedback-left">
+												<label class="control-label">Enter Your Mobile Number</label>
+												<input type="email" class="form-control" placeholder="Mobile Number" />
+												<i class="glyphicon glyphicon-earphone form-control-feedback"></i>
+												<span class="help-block"></span>
+											</div>
+											<button type="submit" class="btn btn-success btn-block">Submit</button>
+											<p>
+												<a id="back">Back to Login</a>
+											</p>
+										</div>	
+										<div class="collapse" id="forgot_pwd">
+											<div class="form-group has-feedback has-feedback-left">
+												<label class="control-label">Enter Your E-mail Address</label>
+												<input type="email" class="form-control" placeholder="Email Address" />
+												<i class="glyphicon glyphicon-envelope form-control-feedback"></i>
+												<span class="help-block"></span>
+											</div>
+											<button type="submit" class="btn btn-success btn-block">Submit</button>
+											<p>
+												<a id="back1">Back to Login</a>
+											</p>
+										</div>
+									</div><!--row-->
+								</div><!--col6-->
+
+								<div class="col-md-6">
+									  <p class="lead">Not a Member Yet</p>										  
+									  <ul class="social_list">
+										<li>
+											<a href="#">
+												<i class="fa fa-facebook fa-3x"></i>
+											</a>
+										</li>
+										<li><a href="#"><i class="fa fa-google-plus fa-3x"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li><br/>
+										<li><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
+										<li><a href="#"><i class="fa fa-envelope-o fa-3x"></i></a></li>
+										<li><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+									  </ul>
+									  <p><a class="btn btn-info btn-block " id="register_new" data-toggle="collapse" aria-expanded="false" aria-controls="register">One Click Registration</a></p>										  
+								</div>								
+								<div class="clearfix"></div>
+							</div>
+
+							<!-- Registration Modal--->
+							<div class="modal-body collapse" id="register">
+								<div class="col-md-6">
+								    <div class="row">													
+										<div class="well">
+										    <form id="loginForm" method="POST" action="#">
+												<div class="form-group has-feedback has-feedback-left">
+													<label class="control-label">Enter Your E-mail Address</label>
+													<input type="email" class="form-control" placeholder="Email Address" />
+													<i class="glyphicon glyphicon-envelope form-control-feedback"></i>
+													<span class="help-block"></span>
+												</div>
+
+												<div class="form-group has-feedback has-feedback-left">
+													<label class="control-label">Username</label>
+													<input type="text" class="form-control" placeholder="Username" />
+													<i class="glyphicon glyphicon-user form-control-feedback"></i>
+													<span class="help-block"></span>
+												</div>
+
+											    <div class="form-group  has-feedback has-feedback-left ">
+												  <label for="password" class="control-label">Password</label>
+												  <input type="password" class="form-control" placeholder="Password" id="password" name="password" value="" required="" title="Please enter your password">
+												  <i class="form-control-feedback glyphicon glyphicon-lock"></i>
+												  <span class="help-block"></span>
+											    </div>
+
+											   <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+											   
+											   <button type="submit" class="btn btn-success btn-block">Register</button>
+											  												
+												<div class="collapse" id="forgot_pwd">
+													<div class="form-group has-feedback has-feedback-left">
+														<label class="control-label">Enter Your E-mail Address</label>
+														<input type="email" class="form-control" placeholder="Email Address" />
+														<i class="glyphicon glyphicon-user form-control-feedback"></i>
+														<span class="help-block"></span>
+													</div>
+												</div>													
+											</form>
+										</div><!--well-->
+									</div><!--row-->
+								</div><!--col6-->
+
+								<div class="col-md-6">									  
+									<p style="margin-top:241px;">
+										<a href="#login" class="btn btn-info btn-block " id="getBack" data-toggle="collapse" aria-expanded="false" aria-controls="login">Go Back to Login</a>
+									</p>										  
+								</div>								
+								<div class="clearfix"></div>
+							</div>	<!-- Modal registration-->
+
+						</div>
+					</div>
+				</div>
+				<!-- End of Model One -->
+			</div>			
+		</div>		
+	</div>
+</div>
+
+<script>
+	$('#myModal').on('shown.bs.modal', function () {
+		setTimeout(function (){
+			$('#username').focus();
+		}, 200);
+	});
+	var login = document.getElementById("login");
+	var register = document.getElementById("register");
+	var uname = document.getElementById("forgot_uname");
+	var pwd = document.getElementById("forgot_pwd");
+	
+	$("#register_new").on('click', function(){
+		$(login).slideUp(1000,function(){
+			$(register).toggleClass('collapse');
+		});
+	});
+	$("#getBack").on('click', function(){
+		$(register).slideDown(1000,function(){
+			$(login).show('slow');
+			$(register).addClass('collapse');
+		});
+	});
+	/***************************/
+	$("#getUname").on('click', function(){
+		$("#log_form").slideUp('swing',function(){
+			$(uname).removeClass('collapse');
+		});
+	});
+	$("#getPwd").on('click', function(){
+		$("#log_form").slideUp('swing',function(){
+			$(pwd).removeClass('collapse');
+		});
+	});	
+	$("#back").on('click', function(){
+		$("#log_form").show('swing',function(){			
+			$(uname).addClass('collapse');
+		});
+	});	
+	$("#back1").on('click', function(){
+		$("#log_form").show('swing',function(){			
+			$(pwd).addClass('collapse');
+		});
+	});	
+
+</script>
+</body>
+</html>
